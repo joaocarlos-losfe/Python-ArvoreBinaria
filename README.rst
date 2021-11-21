@@ -4,11 +4,11 @@ PYSIMPLESTREE
 Pacote python para criação de árvores binárias de busca
 =======================================================
 
-.. image:: https://img.shields.io/pypi/v/tree.svg?style=flat-square
+.. image:: https://img.shields.io/pypi/v/pysimpletree.svg?style=flat-square
         :target: https://pypi.org/project/pysimpletree/
 
 .. image:: https://img.shields.io/pypi/l/Tree.svg?style=flat-square
-        :target: https://github.com/PixelwarStudio/PyTree/blob/master/LICENSE
+        :target: https://github.com/joaocarlos-losfe/pysimpletree/blob/main/LICENSE.txt
 
 .. image:: https://www.ime.usp.br/~pf/algoritmos/aulas/img/binary-search-tree-sorted-array-animation.gif
 
