@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pysimpletree"
-version = "1.0.6"
+version = "2.0.0"
 description = "https://github.com/joaocarlos-losfe/pysimpletree"
 authors = ["João Carlos && Vitor Santos"]
 
