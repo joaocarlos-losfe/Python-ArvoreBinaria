@@ -1,9 +1,3 @@
-.. image:: https://img.shields.io/pypi/v/pysimpletree.svg?style=flat-square
-        :target: https://pypi.org/project/pysimpletree/
-
-.. image:: https://img.shields.io/pypi/l/Tree.svg?style=flat-square
-        :target: https://github.com/joaocarlos-losfe/pysimpletree/blob/main/LICENSE.txt
-
 PYSIMPLESTREE
 -------------
 
@@ -14,16 +8,16 @@ Criadores
 =========
 
 
-        * `João Carlos <https://github.com/joaocarlos-losfe>`_
-        
-        * `Vitor Santos <https://github.com/viktorsht>`_
+[Vitor Santos](https://github.com/viktorsht)
+[João Carlos](https://github.com/joaocarlos-losfe)
 
-.. image:: https://www.ime.usp.br/~pf/algoritmos/aulas/img/binary-search-tree-sorted-array-animation.gif
+
+![tree](https://www.ime.usp.br/~pf/algoritmos/aulas/img/binary-search-tree-sorted-array-animation.gif)
 
 O pacote pysimpletree é responsável por fornecer as operações básicas de uma árvores binária de busca para o programador. Assim, o programador,será poupado de realizar a implementação da árvore binária de busca.
 
 O pacote fornece as funções de operações básicas da árvore.
-  
+
    * Inserção
    * Remoção
    * Impressão em pré - Ordem
@@ -31,18 +25,16 @@ O pacote fornece as funções de operações básicas da árvore.
    * Quantidade de nós
    * Altura da árvore
    * Busca por elementos
-   * Salvar em arquivo ou recuperar 
+   * Salvar em arquivo ou recuperar
 
 Instalação
 ==========
 
-.. code-block:: bash
-
     $ pip install pysimpletree
-    
+
 Exemplo de uso do código
 ========================
-.. code-block:: python
+~~~
 
   from pysimpletree.binarytree import BinaryTree
 
@@ -66,3 +58,4 @@ Exemplo de uso do código
   tree.em_ordem(tree.raiz)
 
   tree.salvar_arvore_no_arquivo(tree.raiz, "C:/Users/joaoc/Documents/Projetos", "arvore_arquivo")
+~~~
