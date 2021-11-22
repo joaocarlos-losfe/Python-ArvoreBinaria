@@ -1,20 +1,15 @@
-[metadata]
-name = pysimpletree
-version = 6.5.0
-author = João Carlos && Vitor Santos
-description = Pacote python para criação de árvores binárias de busca
-long_description = file: README.md
-long_description_content_type = text/markdown
-url = https://github.com/joaocarlos-losfe/pysimpletree
-classifiers =
-    Programming Language :: Python :: 3
-    License :: OSI Approved :: MIT License
-    Operating System :: OS Independent
+[tool.poetry]
+name = "pysimpletree"
+version = "1.1.5"
+description = "https://github.com/joaocarlos-losfe/pysimpletree"
+authors = ["João Carlos && Vitor Santos"]
 
-[options]
-package_dir =
-  = pysimpletree
-package_requires = >=3.9
+[tool.poetry.dependencies]
+python = "^3.9"
 
-[options.packages.fing]
-where = pysimpletree
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

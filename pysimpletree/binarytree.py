@@ -53,9 +53,9 @@ class BinaryTree:
         """
         return self.__total_nos
 
-    def em_ordem(self, raiz:No):
+    def pre_ordem(self, raiz:No):
         """
-            imprime os elementos da árvore em ordem.
+            imprime os elementos da árvore em pre ordem.
             Parametros obrigatorios: 'instancia.raiz'
         """
         if raiz is not None:
@@ -63,9 +63,9 @@ class BinaryTree:
             self.em_ordem(raiz.no_esquerdo)
             self.em_ordem(raiz.no_direito)
     
-    def pre_ordem(self, raiz:No):
+    def em_ordem(self, raiz:No):
         """
-            imprime os elementos da árvore em pré ordem.
+            imprime os elementos da árvore em ordem.
             Parametros obrigatorios: 'instancia.raiz'
         """
         if raiz is not None:
@@ -172,7 +172,7 @@ class BinaryTree:
             if no_atual == None:
                 return False
         
-        if self.eh_folha(no_atual.no_esquerdo) and self.eh_folha(no_atual.no_direito) == True:
+        if no_atual.no_esquerdo == None and no_atual.no_direito == None:
             if no_atual == self.raiz:
                 self.raiz = None
             else:
@@ -271,22 +271,35 @@ class BinaryTree:
         
         return False
 
+
+
 """
-        
+import os
 arvore = BinaryTree()
-arvore.ler_arvore_do_arquivo(arvore.raiz, "C:/Users/joaoc/Documents/Projetos/pysimpletree/pysimpletree", "arquivo_arvore")
 
-arvore.em_ordem(arvore.raiz)
-"""
+arvore.ler_arvore_do_arquivo(arvore.raiz, "C:/Users/joaoc/Documents/UFPI/POO2/Criação de pacotes em python/pysimpletree/arquivo_arvore", "arquivo_arvore")
+arvore.pre_ordem(arvore.raiz)
+path = os.getcwd()
+arvore.salvar_arvore_no_arquivo(arvore.raiz, os.getcwd(), "arquivo_arvore")
 
-"""
 arvore.inserir_chave(5)
 arvore.inserir_chave(6)
 arvore.inserir_chave(7)
 arvore.inserir_chave(4)
 arvore.inserir_chave(3)
 arvore.inserir_chave(8)
-arvore.salvar_arvore_no_arquivo(arvore.raiz, "C:/Users/joaoc/Documents/Projetos/pysimpletree/pysimpletree", "arquivo_arvore")
+
+arvore.remover_chave(6)
+arvore.remover_chave(4)
+arvore.remover_chave(5)
+
+
+arvore.em_ordem(arvore.raiz)
+"""
+
+"""
+
+
 
 
 print("\ntotal de nós da arvore: " + str(arvore.get_total_nos()))
