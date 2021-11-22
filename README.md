@@ -8,8 +8,8 @@ Criadores
 =========
 
 
-[Vitor Santos](https://github.com/viktorsht)
-[João Carlos](https://github.com/joaocarlos-losfe)
+[Vitor Santos](https://github.com/viktorsht) <br />
+[João Carlos](https://github.com/joaocarlos-losfe) <br />
 
 
 ![tree](https://www.ime.usp.br/~pf/algoritmos/aulas/img/binary-search-tree-sorted-array-animation.gif)
